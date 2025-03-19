@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/src/logo1.png">
+    <link rel="shortcut icon" type="image/png" href="/src/logo1.png">
+    <link rel="apple-touch-icon" href="/src/logo1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialValueSchool</title>
+    <link rel="stylesheet" href="/styles/veriemail.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/index.html" class="logo-link">
+                <img class="img-logo" src="/src/logo1.png" alt="logotipo">
+            </a>
+            <p class="logo">SocialValue<span class="color-acento">School</span></p>
+        </div>
+    </header>
+    <section id="verifyemail">
+        <div class="container">
+            <h2>Verificación de Email</h2>
+            <input type="email" id="emailInput" placeholder="Introduce tu email">
+            <br>
+            <button id="sendCodeButton" onclick="sendEmail()">Enviar Email</button>
+        </div>
+    </section>
+    
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p><a href="/html/terminos.html">Terminos de uso</a></p>
+            <p><a href="/html/privaciti.html">Politicas de Privacidad</a></p>
+            <p>&copy; SocialValueSchool Registered 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/scripts/verificacion.js"></script>
+</body>
+</html>

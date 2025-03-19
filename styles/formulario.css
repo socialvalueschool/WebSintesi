@@ -1,0 +1,255 @@
+/* Margen de todo */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Diseño Cuerpo */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+}
+
+/* Diseño Header */
+header {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0px;
+}
+
+.img-logo {
+    height: 50px;
+    width: 50px;
+}
+
+header .logo {
+    margin: 0;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+}
+
+#formul {
+    margin-top: 280px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Diseño del formulario */
+.container {
+    max-width: 600px;
+    margin: 100px auto 20px; /* Evitar que el formulario quede detrás del header */
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Ajuste del checkbox */
+
+
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between; /* Asegura que el checkbox esté a la derecha */
+}
+
+.form-check input {
+    margin-left: 10px;
+}
+
+.invalid-feedback {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: red;
+    font-size: 0.9em;
+}
+
+/* Estilo de retroalimentación válida */
+.valid-feedback {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: green;
+    font-size: 0.9em;
+}
+
+/* Diseño Botón */
+button, .btn-form {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(109, 26, 185);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+
+/* Ajustes del desplegable */
+.select2-container .select2-selection--single {
+    height: 45px;
+    padding: 5px;
+    font-size: 1em;
+}
+.invalid-feedback{
+    margin-top: 10px;
+}
+
+.select2-dropdown {
+    font-size: 1em;
+}
+
+.color-acento {
+    color: blueviolet;
+}
+footer .container{
+    height: 100px;
+    margin-bottom: 0px;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+    padding: 10vh 30px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer .container{
+    background-color: white;
+    box-shadow: none;
+}
+footer p{
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2px;
+    color: black;
+}
+.is-invalid {
+    border-color: red;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2C5.44772 2 5 2.44772 5 3V9c0 .55228 0 1 1 1h2v1c0 .55228-.44772 1-1 1H7c-.55228 0-1 0-1-1v-5c0-.55228-.44772-1-1-1zm1 5v3h1V8h1v3z" fill="red"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center right .75em;
+    background-size: calc(.6em + .3rem) calc(.6em + .3rem);
+}
+
+.is-valid {
+    border-color: green;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2c5.44772 2 5 2.44772 5 3v9c0 .55228 0 1 1 1h2v1c0 .55228-.44772 1-1 1H7c-.55228 0-1 0-1-1v-5c0-.55228-.44772-1-1-1zm1 5v3h1V8h1v3z" fill="green"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center right .75em;
+    background-size: calc(.6em + .3rem) calc(.6em + .3rem);
+}
+@media (min-width: 920px) {
+
+    header{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+    header .container {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    header .logo{
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        padding:  8vh;
+        text-align: center;
+        align-items: center;
+        margin: 50px;
+        margin-right: 5%;
+        margin-left: 5%;
+        align-content: center;
+        
+    }
+
+    footer p{
+        margin-right: 5%;
+        margin-left: 5%;
+
+    }
+
+    footer .container{
+        margin-right: 5%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     
+    }
+}

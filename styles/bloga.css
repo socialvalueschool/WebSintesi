@@ -1,0 +1,234 @@
+/* Margen de todo */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* Diseño Cuerpo */
+body{
+    font-family: "Roboto",sans-serif;
+}
+
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.25em;
+}
+
+/* Contenedor del perfil */
+.perfil-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Estilos para la imagen de perfil */
+.perfil-imagen {
+    margin-bottom: 20px;
+}
+
+.perfil-imagen img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+}
+
+/* Estilos para los datos del perfil */
+.perfil-datos {
+    text-align: center;
+}
+
+/* Estilo para el nombre de usuario */
+#nombre_usuario {
+    color: blueviolet;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los otros datos */
+#ciudad, #pais, #telefono {
+    color: black;
+    margin-bottom: 5px;
+}
+
+/* Diseño Lista */
+ul{
+    list-style: none;
+}
+li{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Diseño Icono */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+}
+
+/* Diseño Logo */
+header .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(251, 250, 252);
+    font-size: 1.6em;
+}
+
+/* Diseño Container encabezado */
+header.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Diseño Navegador encabezado */
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align-last: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 7px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+.color-acento{
+    color: blueviolet;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .container{
+    height: 100px;
+    margin-bottom: 0px;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+    padding: 10vh 30px;
+    text-align: center;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer p{
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2px;
+    color: black;
+}
+
+/* Para pantallas más grandes */
+@media (min-width: 920px) {
+    header{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    header .container {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .logo{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Cambios para el perfil en pantallas grandes */
+    .perfil-contenedor {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 200px;
+    }
+
+    .perfil-imagen {
+        margin-bottom: 0;
+    }
+
+    .perfil-imagen img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .perfil-datos {
+        text-align: left;
+    }
+
+    #nombre_usuario, #ciudad, #pais, #telefono {
+        text-align: left;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        padding: 8vh;
+        text-align: center;
+        align-items: center;
+        margin: 50px;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    footer p{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    footer .container{
+        margin-right: 5%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/src/logo1.png">
+    <link rel="shortcut icon" type="image/png" href="/src/logo1.png">
+    <link rel="apple-touch-icon" href="/src/logo1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialValueSchool</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+    <link rel="stylesheet" href="/styles/formulario.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="/index.html" class="logo-link">
+                <img class="img-logo" src="/src/logo1.png" alt="logotipo">
+            </a>
+            <p class="logo">SocialValue<span class="color-acento">School</span></p>
+        </div>
+    </header>
+
+    <section id="formul">
+        <form action="/php/register.php" method="POST" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <h1>Datos Personales</h1>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" name="nombre" required>               
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Primer Apellido" name="primer_apellido" required>              
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="validationCustom03" placeholder="Segundo Apellido" name="segundo_apellido" required>               
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="validationCustomUsername" placeholder="Nombre Usuario" name="nombre_usuario" required>               
+            </div>
+            <div class="col-md-4">
+                <input type="password" class="form-control" id="validationCustomPassword" placeholder="Contraseña" name="contraseña" required>               
+            </div>
+            <div class="col-md-6">
+                <input type="tel" class="form-control" id="phone" placeholder="Teléfono" name="telefono" required>              
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="validationCustomCity" placeholder="Ciudad" name="ciudad" required>               
+            </div>
+            <div class="col-md-3">
+                <select class="form-select" id="country-select" name="pais" required>
+                    <option value="">Selecciona un país</option>
+                    <option value="es">España</option>
+                    <option value="us">Estados Unidos</option>
+                    <option value="gb">Reino Unido</option>
+                    <option value="fr">Francia</option>
+                    <option value="de">Alemania</option>
+                </select>               
+            </div>
+            <div class="col-md-3">
+                <input type="text" class="form-control" id="validationCustomZip" placeholder="Código Postal" name="codigo_postal" required>
+               
+            </div>
+            <div class="col-12 mt-4">
+                <h1>Datos Bancarios</h1>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="card-number" placeholder="Número de Tarjeta" name="numero_tarjeta" maxlength="16" inputmode="numeric" required>                
+            </div>            
+            <div class="col-md-3">
+                <input type="text" class="form-control" id="card-expiry" placeholder="MM/YY" name="fecha_expiracion" pattern="\d{2}/\d{2}" required>               
+            </div>            
+            <div class="col-md-3">
+                <input type="text" class="form-control" id="card-cvv" placeholder="Código CVV" name="codigo_cvv" maxlength="4" inputmode="numeric" required>
+            </div>
+                        
+            <div class="check">
+                <input type="checkbox" name="clic" id="clic" required>
+                <label for="clic"> Aceptar términos y condiciones</label>
+            </div>
+            <div class="col-12">
+                <button class="btn-form" type="submit">Enviar</button>
+            </div>
+        </form>
+        
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p><a href="/html/terminos.html">Términos de uso</a></p>
+            <p><a href="/html/privaciti.html">Políticas de Privacidad</a></p>
+            <p>&copy; SocialValueSchool Registered 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="/scripts/formulario.js"></script> 
+</body>
+</html>
+

@@ -1,0 +1,52 @@
+/* Margen de todo */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* Diseño Cuerpo */
+body{
+    font-family: "Roboto",sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 40vh;
+    
+}
+
+
+h2{
+    font-size: 2.7em;
+}
+
+p{
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Para oscurecer el color del Boton */
+button:hover{
+    background-color: rgb(109, 26, 185);
+}
+
+
+/* Diseño Boton */
+button{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0, 5);
+    box-shadow: 2px 2px 10px rgba(0,0,0, 5);
+    color: white;
+    background-color: blueviolet;
+}

@@ -1,0 +1,250 @@
+/* Margen de todo */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Diseño Cuerpo */
+body{
+    font-family: "Roboto",sans-serif;
+}
+
+/* Diseño Container */
+.container{
+    max-width: 1400px;
+}
+
+/* Diseño Icono */
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgb(8, 8, 8);
+}
+.course-section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-title {
+    color: blueviolet;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.course-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.info-card {
+    background-color: rgba(137, 43, 226, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid blueviolet;
+}
+
+.info-title {
+    color: blueviolet;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.info-list li::before {
+    content: "•";
+    color: blueviolet;
+    position: absolute;
+    left: 0;
+}
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.module-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid blueviolet;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;  /* Cambiado a row para alineación horizontal */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;  /* Espacio entre el logo y el texto */
+    padding: 10px 0;
+   
+}
+
+.title h1{
+    font-size: 2.4em;
+    text-align: center;
+    padding: 150px;
+    color: blueviolet;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+  
+
+}
+
+.parraf p{
+    padding: 5vh;
+    font-weight: bold;
+    margin-top: -140px;
+}
+.color-acento{
+    color: blueviolet;
+}
+
+
+.img-logo{
+    height: 50px;
+    width: 50px;
+}
+
+/* Diseño Logo */
+header .logo{
+    margin: 0;
+    font-weight: bold;
+    color: rgb(251, 250, 252);
+    font-size: 1.5em;
+}
+
+#content {
+    background-image: linear-gradient(
+        0deg,
+        rgba(5, 5, 5, 0),
+        rgba(5, 5, 5, 0)
+    ),
+    url("/src/img_card1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    width: 100%;
+    min-height: 100vh; 
+    height: auto;
+}
+footer .container{
+    height: 100px;
+    margin-bottom: 0px;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+    padding: 10vh 30px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer p{
+    text-shadow: none;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2px;
+    color: black;
+}
+@media (min-width: 920px) {
+
+    header{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+    header .container {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    header .logo{
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        padding:  8vh;
+        text-align: center;
+        align-items: center;
+        margin: 50px;
+        margin-right: 5%;
+        margin-left: 5%;
+        align-content: center;
+        
+    }
+
+    footer p{
+        margin-right: 5%;
+        margin-left: 5%;
+
+    }
+
+    footer .container{
+        margin-right: 5%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     
+    }
+}
