@@ -8,7 +8,7 @@ function sendEmail() {
 
     // _API_KEY de EmailJS
 
-    emailjs.init("KAzqDXfy9czY41Nvd"); 
+    emailjs.init(""); 
 
     emailjs.send("service_p1303z8", "template_35zk3u1", {
         to_email: to_email,
